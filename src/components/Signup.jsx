@@ -18,14 +18,14 @@ export function Signup() {
       <h2 className="text-2xl font-bold text-center mb-4">Sign Up</h2>
       <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
         <div>
-          <label className="block text-sm font-medium">Name</label>
+          <label className="block text-sm font-medium">Username</label>
           <input
             type="text"
-            {...register("name", { required: "Name is required" })}
+            {...register("username", { required: "Username is required" })}
             className="w-full p-2 border rounded"
           />
-          {errors.name && (
-            <p className="text-red-500 text-sm">{errors.name.message}</p>
+          {errors.username && (
+            <p className="text-red-500 text-sm">{errors.username.message}</p>
           )}
         </div>
 
